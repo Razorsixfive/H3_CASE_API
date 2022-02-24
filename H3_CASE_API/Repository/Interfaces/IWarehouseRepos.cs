@@ -10,7 +10,7 @@ namespace H3_CASE_API.Repository.Interfaces
         Warehouse GetWarehouse(int Id);
         Task<bool> AddWarehouse(InputDataModels.PostPut_Warehouse warehouse);
         Task<bool> UpdateWarehouseStock(int productID, int Ammount, Warehouse warehouse);
-        Task<Warehouse> UpdateWarehouse(InputDataModels.PostPut_Warehouse warehouse);
+        Task<Warehouse> UpdateWarehouse(int id,InputDataModels.PostPut_Warehouse warehouse);
         bool WarehouseExists(int Id);
         bool Save();
 

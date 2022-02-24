@@ -6,6 +6,7 @@ global using AutoMapper;
 global using Newtonsoft;
 
 var builder = WebApplication.CreateBuilder(args);
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 // Add services to the container.
 
@@ -14,6 +15,12 @@ var builder = WebApplication.CreateBuilder(args);
 //    setupAction.ReturnHttpNotAcceptable = true;
 
 //}).AddXmlDataContractSerializerFormatters();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      builder =>{builder.WithOrigins("*");});
+});
 
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
@@ -44,8 +51,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors(MyAllowSpecificOrigins);
+
 app.UseAuthorization();
 
 app.MapControllers();
 
 app.Run();
+
+
+// Update warehouse
+// update customer
+// add customer
+

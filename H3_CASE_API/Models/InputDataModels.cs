@@ -16,16 +16,26 @@ namespace H3_CASE_API.Dto
             public List<AddreseDto>? addreses { get; set; }
         }
 
+
         public class PostProduct
         {
             public int ProductID { get; set; }
             public int CategoryID { get; set; }
             public int ManufactorID { get; set; }
+
             public string? Product_Description { get; set; }
             public string? Product_Name { get; set; }
             public double In_Price { get; set; }
             public double Out_Price { get; set; }
         }
+
+        public class Post_Addrese
+        {
+            public string? Addrese_Name { get; set; }
+            public int PostalCode { get; set; }
+        }
+
+
         public class PostPut_Warehouse
         {
             public int DepartmentID { get; set; }
@@ -37,9 +47,7 @@ namespace H3_CASE_API.Dto
             public string? Phone_Number { get; set; }
             public string? Mobile_Number { get; set; }
 
-            public string? Addrese_Name { get; set; }
-            public int PostalCode { get; set; }
-
+            public IEnumerable<Post_Addrese> Addreses { get; set; }
         }
     }
 }

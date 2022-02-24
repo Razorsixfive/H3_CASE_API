@@ -27,12 +27,6 @@ namespace H3_CASE_API.Repository.Repos
                     .ThenInclude(Product_Stocks => Product_Stocks.Product)
                 .Include(x=>x.Department)
                 .FirstOrDefault(a => a.WarehouseID == Id);
-
-            if (Warehouse == null)
-            {
-                throw new ArgumentNullException(nameof(Id));
-            }
-
             return Warehouse;
         }
 
@@ -51,42 +45,27 @@ namespace H3_CASE_API.Repository.Repos
 
         public async Task<bool> AddWarehouse(InputDataModels.PostPut_Warehouse warehouse)
         {
-            var _Department = await _context.Department.FindAsync(warehouse.DepartmentID);
-            var _PostalCode = await _context.PostalCodes.FindAsync(warehouse.PostalCode);
+            var data = await Dismalte_PostPut(warehouse);
+            var Contact = data.Item1;
+            var Warehouse = data.Item2;
+            var Addreses = data.Item3;
 
-            if (_Department == null || _PostalCode == null){
-                return false;
+            _context.Contact_Informaition.Add(Contact);
+            await _context.SaveChangesAsync();
+
+            foreach(Addrese _Addrese in Addreses){
+                _context.Addrese.Add(_Addrese);
             }
-
-            var _ContactInformation = new Contact_Informaition();
-            _ContactInformation.Contact_TypeID = warehouse.ContactTypeID;
-            _ContactInformation.Email = warehouse.Email;
-            _ContactInformation.First_Name = warehouse.First_Name;
-            _ContactInformation.Last_Name = warehouse.Last_Name;
-            _ContactInformation.Phone_Number = warehouse.Phone_Number;
-            _ContactInformation.Mobile_Number = warehouse.Mobile_Number;
-            _context.Contact_Informaition.Add(_ContactInformation);
             await _context.SaveChangesAsync();
 
-            var _Addrese = new Addrese();
-            _Addrese.Contact_InformaitionID = _ContactInformation.Contact_InformaitionID;
-            _Addrese.Addrese_Name = warehouse.Addrese_Name;
-            _Addrese.PostalCode = warehouse.PostalCode;
-            _context.Addrese.Add(_Addrese);
-            await _context.SaveChangesAsync();
-
-
-            var _Warehouse = new Warehouse();
-            _Warehouse.DepartmentID = _Department.DepartmentID;
-            _Warehouse.Contact_InformaitionID = _ContactInformation.Contact_InformaitionID;
-            _context.Warehouse.Add(_Warehouse);
+            _context.Warehouse.Add(Warehouse);
             await _context.SaveChangesAsync();
 
             foreach (Product _Product in _context.Product)
             {
                 Product_Stock _Stock = new Product_Stock();
 
-                _Stock.WarehouseID = _Warehouse.WarehouseID;
+                _Stock.WarehouseID = Warehouse.WarehouseID;
                 _Stock.ProductID = _Product.ProductID;
                 _Stock.Ammount = 0;
 
@@ -94,13 +73,24 @@ namespace H3_CASE_API.Repository.Repos
             }
             await _context.SaveChangesAsync();
 
-
             return true;
         }
 
-        public Task<Warehouse> UpdateWarehouse(InputDataModels.PostPut_Warehouse warehouse)
+        public async Task<Warehouse> UpdateWarehouse(int id, InputDataModels.PostPut_Warehouse warehouse)
         {
-            throw new NotImplementedException();
+
+            var data = await Dismalte_PostPut(warehouse);
+            var Contact = data.Item1;
+            var Warehouse = data.Item2;
+
+            var _OldWarehouse = await _context.Warehouse.FirstOrDefaultAsync(e => e.WarehouseID == id);
+            var _OldContact = await _context.Contact_Informaition.FirstOrDefaultAsync(e => e.Contact_InformaitionID == _OldWarehouse.Contact_InformaitionID);
+
+            _OldWarehouse = Warehouse;
+            _OldContact = Contact;
+
+            await _context.SaveChangesAsync();
+            return Warehouse;
         }
 
         public bool WarehouseExists(int Id)
@@ -124,6 +114,34 @@ namespace H3_CASE_API.Repository.Repos
                 return true;
             }
             return false;
+        }
+
+        public async Task<Tuple<Contact_Informaition, Warehouse, List<Addrese>>> Dismalte_PostPut(InputDataModels.PostPut_Warehouse warehouse)
+        {
+            var _ContactInformation = new Contact_Informaition();
+                _ContactInformation.Contact_TypeID = warehouse.ContactTypeID;
+                _ContactInformation.Email = warehouse.Email;
+                _ContactInformation.First_Name = warehouse.First_Name;
+                _ContactInformation.Last_Name = warehouse.Last_Name;
+                _ContactInformation.Phone_Number = warehouse.Phone_Number;
+                _ContactInformation.Mobile_Number = warehouse.Mobile_Number;
+
+            var _Warehouse = new Warehouse();
+                _Warehouse.DepartmentID = warehouse.DepartmentID;
+                _Warehouse.Contact_InformaitionID = _ContactInformation.Contact_InformaitionID;
+
+            List<Addrese> addreses = new List<Addrese>();
+
+            foreach (InputDataModels.Post_Addrese Addrese in warehouse.Addreses)
+            {
+                var _Addrese = new Addrese();
+                    _Addrese.Contact_InformaitionID = _ContactInformation.Contact_InformaitionID;
+                    _Addrese.Addrese_Name = Addrese.Addrese_Name;
+                    _Addrese.PostalCode = Addrese.PostalCode;
+                addreses.Add(_Addrese);
+            }
+
+            return Tuple.Create(_ContactInformation, _Warehouse, addreses);
         }
 
     }

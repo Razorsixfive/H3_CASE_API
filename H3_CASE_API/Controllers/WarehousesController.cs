@@ -85,11 +85,11 @@ namespace H3_CASE_API.Controllers
         }
 
         // POST: api/Warehouses
-        [HttpPost]
-        public async Task<IActionResult> PostWarehouse(Warehouse warehouse)
+        [HttpPost("{id}")]
+        public async Task<IActionResult> PostWarehouse(int id,InputDataModels.PostPut_Warehouse warehouse)
         {
-            throw new NotSupportedException();
-
+            var data = await _warehouseRepos.UpdateWarehouse(id, warehouse);
+            return Ok(data);
         }
     }
 }
