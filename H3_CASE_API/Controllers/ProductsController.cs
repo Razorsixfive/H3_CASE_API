@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using H3_CASE_API.DBContext;
 using H3_CASE_API.Models;
-using H3_CASE_API.Dto;
 
 
 namespace H3_CASE_API.Controllers
@@ -48,7 +47,28 @@ namespace H3_CASE_API.Controllers
                 return NotFound();
             }
             return Ok(_mapper.Map<ProductDto>(product));
+        }
 
+        [HttpGet("Category/{Category_id}")]
+        public IActionResult GetProduct_ByCategory(int Category_id)
+        {
+            var product = _productRepos.GetProducts_ByCategory(Category_id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(_mapper.Map<IEnumerable<ProductDto>>(product));
+        }
+
+        [HttpGet("Manufactor/{Manufactor_ID}")]
+        public IActionResult GetProduct_ByManufactor(int Manufactor_ID)
+        {
+            var product = _productRepos.GetProducts_ByManufactor(Manufactor_ID);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(_mapper.Map<IEnumerable<ProductDto>>(product));
         }
 
         [HttpPost]

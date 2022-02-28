@@ -1,5 +1,4 @@
 ﻿using H3_CASE_API.Models;
-using H3_CASE_API.Dto;
 
 namespace H3_CASE_API.Repository.Interfaces
 {
@@ -7,6 +6,8 @@ namespace H3_CASE_API.Repository.Interfaces
     {
 
         IEnumerable<Product> GetProducts();
+        IEnumerable<Product> GetProducts_ByCategory(int id);
+        IEnumerable<Product> GetProducts_ByManufactor(int id);
         Product GetProduct(int Id);
         Task<bool> AddProduct(InputDataModels.PostProduct Product);
         Task<Product> UpdateProduct(Product Product);

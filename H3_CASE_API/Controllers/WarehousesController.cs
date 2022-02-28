@@ -9,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using H3_CASE_API.Repository;
 using H3_CASE_API.DBContext;
 using H3_CASE_API.Models;
-using H3_CASE_API.Dto;
 
 namespace H3_CASE_API.Controllers
 {

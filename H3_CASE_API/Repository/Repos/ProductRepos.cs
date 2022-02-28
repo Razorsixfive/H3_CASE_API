@@ -1,5 +1,4 @@
 ﻿using H3_CASE_API.Models;
-using H3_CASE_API.Dto;
 
 namespace H3_CASE_API.Repository.Repos
 {
@@ -93,6 +92,23 @@ namespace H3_CASE_API.Repository.Repos
             }
 
             return null;
+        }
+        public IEnumerable<Product> GetProducts_ByCategory(int id)
+        {
+            var data = _context.Product
+                .Include(x => x.Manufactor)
+                .Include(x => x.Category)
+                .Where(x=>x.CategoryID == id);
+            return data;
+        }
+
+        public IEnumerable<Product> GetProducts_ByManufactor(int id)
+        {
+            var data = _context.Product
+                .Include(x => x.Manufactor)
+                .Include(x => x.Category)
+                .Where(x => x.ManufactorID == id);
+            return data;
         }
 
         public bool ProductExists(int Id)

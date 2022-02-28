@@ -1,5 +1,4 @@
 ﻿using H3_CASE_API.Models;
-using H3_CASE_API.Dto;
 
 namespace H3_CASE_API.Repository.Interfaces
 {

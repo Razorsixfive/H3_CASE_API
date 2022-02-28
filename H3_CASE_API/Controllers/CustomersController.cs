@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using H3_CASE_API.DBContext;
-using H3_CASE_API.Dto;
 using H3_CASE_API.Models;
 using AutoMapper;
 
@@ -61,23 +60,47 @@ namespace H3_CASE_API.Controllers
                 return Ok();
             }
             return BadRequest();
+
         }
 
-        [HttpPut]
-        public async Task<IActionResult> UpdateCustomer(Customer customer)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCustomer(int id ,InputDataModels.PutCustomer _input)
         {
-            if (!_CustomerRepos.CustomerExists(customer.CustomerID))
+            if (!_CustomerRepos.CustomerExists(id))
             {
                 return NotFound();
             }
 
-            if (await _CustomerRepos.UpdateCustomer(customer) == null)
+            if (await _CustomerRepos.UpdateCustomer(id,_input) == null)
             {
                 return BadRequest();
             }
 
             _CustomerRepos.Save();
             return NoContent();
+        }
+
+        [HttpPost("Addrese/{CustomerID}")]
+        public async Task<IActionResult> AddAddrese(int CustomerID, InputDataModels.Post_Addrese _input)
+        {
+            var data = _CustomerRepos.AddCustomer_Addrese(CustomerID, _input);
+            return Ok(data);
+        }
+
+
+        [HttpDelete("Addrese/{AddreseID}")]
+        public async Task<IActionResult> DeleteAddrese(int AddreseID)
+        {
+            var data = _CustomerRepos.DeleteCustomer_Addrese(AddreseID);
+            return Ok(data);
+        }
+
+
+        [HttpPut("Addrese/{AddreseID}")]
+        public async Task<IActionResult> UpdateAddrese(int AddreseID, InputDataModels.Post_Addrese _input)
+        {
+            var data = _CustomerRepos.UpdateCustomer_Addrese(AddreseID, _input);
+            return Ok(data);
         }
     }
 }

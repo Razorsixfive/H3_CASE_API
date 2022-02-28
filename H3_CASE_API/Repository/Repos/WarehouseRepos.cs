@@ -1,6 +1,5 @@
 ﻿using System;
 using H3_CASE_API.Models;
-using H3_CASE_API.Dto;
 using H3_CASE_API.Repository;
 using System.Collections.Generic;
 using System.Linq;
@@ -78,19 +77,19 @@ namespace H3_CASE_API.Repository.Repos
 
         public async Task<Warehouse> UpdateWarehouse(int id, InputDataModels.PostPut_Warehouse warehouse)
         {
+            throw new NotImplementedException();
+            //var data = await Dismalte_PostPut(warehouse);
+            //var Contact = data.Item1;
+            //var Warehouse = data.Item2;
 
-            var data = await Dismalte_PostPut(warehouse);
-            var Contact = data.Item1;
-            var Warehouse = data.Item2;
+            //var _OldWarehouse = await _context.Warehouse.FirstOrDefaultAsync(e => e.WarehouseID == id);
+            //var _OldContact = await _context.Contact_Informaition.FirstOrDefaultAsync(e => e.Contact_InformaitionID == _OldWarehouse.Contact_InformaitionID);
 
-            var _OldWarehouse = await _context.Warehouse.FirstOrDefaultAsync(e => e.WarehouseID == id);
-            var _OldContact = await _context.Contact_Informaition.FirstOrDefaultAsync(e => e.Contact_InformaitionID == _OldWarehouse.Contact_InformaitionID);
+            //_OldWarehouse = Warehouse;
+            //_OldContact = Contact;
 
-            _OldWarehouse = Warehouse;
-            _OldContact = Contact;
-
-            await _context.SaveChangesAsync();
-            return Warehouse;
+            //await _context.SaveChangesAsync();
+            //return Warehouse;
         }
 
         public bool WarehouseExists(int Id)

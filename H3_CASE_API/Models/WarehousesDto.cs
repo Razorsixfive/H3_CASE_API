@@ -1,6 +1,6 @@
 ﻿using H3_CASE_API.Models;
 
-namespace H3_CASE_API.Dto
+namespace H3_CASE_API.Models
 {
     public class WarehousesDto
     {

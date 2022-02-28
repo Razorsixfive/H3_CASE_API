@@ -1,6 +1,6 @@
 ﻿using H3_CASE_API.Models;
 
-namespace H3_CASE_API.Dto
+namespace H3_CASE_API.Models
 {
     public class InputDataModels
     {
@@ -12,8 +12,17 @@ namespace H3_CASE_API.Dto
             public string? Phone_Number { get; set; }
             public string? Mobile_Number { get; set; }
 
-            public string? ContactType { get; set; }
-            public List<AddreseDto>? addreses { get; set; }
+            public int ContactTypeID { get; set; }
+            public List<Post_Addrese>? addreses { get; set; }
+        }
+        public class PutCustomer
+        {
+            public string? Email { get; set; }
+            public string? First_Name { get; set; }
+            public string? Last_Name { get; set; }
+            public string? Phone_Number { get; set; }
+            public string? Mobile_Number { get; set; }
+            public int ContactTypeID { get; set; }
         }
 
 

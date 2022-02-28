@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using H3_CASE_API.Dto;
 
 namespace H3_CASE_API.Models
 {

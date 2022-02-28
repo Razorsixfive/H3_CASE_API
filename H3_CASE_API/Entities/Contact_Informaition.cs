@@ -20,5 +20,16 @@ namespace H3_CASE_API.Models
         public string? Last_Name { get; set; }
         public string? Phone_Number { get; set; }
         public string? Mobile_Number { get; set; }
+
+        public Contact_Informaition(InputDataModels.PostCustomer _Input)
+        {
+            this.Contact_TypeID = _Input.ContactTypeID;
+            this.Email = _Input.Email;
+            this.First_Name = _Input.First_Name;
+            this.Last_Name = _Input.Last_Name;
+            this.Phone_Number = _Input.Phone_Number;
+            this. Mobile_Number = _Input.Mobile_Number;
+        }
+        public Contact_Informaition(){ }
     }
 }

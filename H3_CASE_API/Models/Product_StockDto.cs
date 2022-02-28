@@ -1,7 +1,7 @@
 ﻿using H3_CASE_API.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace H3_CASE_API.Dto
+namespace H3_CASE_API.Models
 {
     public class Product_StockDto
     {

@@ -61,6 +61,3 @@ app.Run();
 
 // Update warehouse
 // update customer
-// add customer
-// products return
-
