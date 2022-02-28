@@ -1,0 +1,266 @@
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+-- Category
+
+CREATE TABLE [dbo].[Category](
+	[CategoryID] [int] IDENTITY(1,1) NOT NULL,
+	[Category_Name] [nvarchar](75) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[CategoryID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+-- Contact_Type
+
+CREATE TABLE [dbo].[Contact_Type](
+	[Contact_TypeID] [int] IDENTITY(1,1) NOT NULL,
+	[ContactType] [nvarchar](255) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Contact_TypeID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+-- Customer
+
+CREATE TABLE [dbo].[Customer](
+	[CustomerID] [int] IDENTITY(1,1) NOT NULL,
+	[ID] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[CustomerID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Customer]  WITH CHECK ADD FOREIGN KEY([ID])
+REFERENCES [dbo].[AspNetUsers] ([ID])
+GO
+
+-- Delivery_Service
+
+CREATE TABLE [dbo].[Delivery_Service](
+	[Delivery_ServiceID] [int] IDENTITY(1,1) NOT NULL,
+	[Courier_Name] [nvarchar](255) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Delivery_ServiceID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+-- Department
+
+CREATE TABLE [dbo].[Department](
+	[DepartmentID] [int] IDENTITY(1,1) NOT NULL,
+	[ID] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[DepartmentID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Department]  WITH CHECK ADD FOREIGN KEY([ID])
+REFERENCES [dbo].[AspNetUsers] ([ID])
+GO
+
+-- Employee
+
+CREATE TABLE [dbo].[Employee](
+	[EmployeeID] [int] IDENTITY(1,1) NOT NULL,
+	[DepartmentID] [int] NULL,
+	[ID] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[EmployeeID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Employee]  WITH CHECK ADD FOREIGN KEY([ID])
+REFERENCES [dbo].[AspNetUsers] ([ID])
+GO
+
+ALTER TABLE [dbo].[Employee]  WITH CHECK ADD FOREIGN KEY([DepartmentID])
+REFERENCES [dbo].[Department] ([DepartmentID])
+GO
+
+
+-- Manufactor
+
+CREATE TABLE [dbo].[Manufactor](
+	[ManufactorID] [int] IDENTITY(1,1) NOT NULL,
+	[Manufactor_Name] [nvarchar](75) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ManufactorID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+-- Orders
+
+CREATE TABLE [dbo].[Orders](
+	[OrdersID] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerID] [int] NULL,
+	[EmployeeID] [int] NULL,
+	[Delivery_ServiceID] [int] NULL,
+	[Payment_Date] [date] NULL,
+	[Shipment_Date] [date] NULL,
+	[Delivery_Date] [date] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[OrdersID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Orders]  WITH CHECK ADD FOREIGN KEY([CustomerID])
+REFERENCES [dbo].[Customer] ([CustomerID])
+GO
+
+ALTER TABLE [dbo].[Orders]  WITH CHECK ADD FOREIGN KEY([Delivery_ServiceID])
+REFERENCES [dbo].[Delivery_Service] ([Delivery_ServiceID])
+GO
+
+ALTER TABLE [dbo].[Orders]  WITH CHECK ADD FOREIGN KEY([EmployeeID])
+REFERENCES [dbo].[Employee] ([EmployeeID])
+GO
+
+-- PostalCodes
+
+CREATE TABLE [dbo].[PostalCodes](
+	[PostalCode] [int] NOT NULL,
+	[City] [nvarchar](100) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[PostalCode] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+-- Product
+
+CREATE TABLE [dbo].[Product](
+	[ProductID] [int] IDENTITY(1,1) NOT NULL,
+	[CategoryID] [int] NULL,
+	[ManufactorID] [int] NULL,
+	[Product_Description] [nvarchar](255) NULL,
+	[Product_Name] [nvarchar](255) NULL,
+	[In_Price] [float] NULL,
+	[Out_Price] [float] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ProductID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Product]  WITH CHECK ADD FOREIGN KEY([CategoryID])
+REFERENCES [dbo].[Category] ([CategoryID])
+GO
+
+ALTER TABLE [dbo].[Product]  WITH CHECK ADD FOREIGN KEY([ManufactorID])
+REFERENCES [dbo].[Manufactor] ([ManufactorID])
+GO
+
+-- OrderLine
+
+CREATE TABLE [dbo].[OrderLine](
+	[OrderLineID] [uniqueidentifier] NOT NULL,
+	[OrdersID] [int] NULL,
+	[ProductID] [int] NULL,
+	[Ammount] [int] NULL,
+	[Price] [float] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[OrderLineID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[OrderLine] ADD  DEFAULT (newid()) FOR [OrderLineID]
+GO
+
+ALTER TABLE [dbo].[OrderLine]  WITH CHECK ADD FOREIGN KEY([OrdersID])
+REFERENCES [dbo].[Orders] ([OrdersID])
+GO
+
+ALTER TABLE [dbo].[OrderLine]  WITH CHECK ADD FOREIGN KEY([ProductID])
+REFERENCES [dbo].[Product] ([ProductID])
+GO
+
+-- Warehouse
+
+CREATE TABLE [dbo].[Warehouse](
+	[WarehouseID] [int] IDENTITY(1,1) NOT NULL,
+	[DepartmentID] [int] NULL,
+	[ID] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[WarehouseID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Warehouse]  WITH CHECK ADD FOREIGN KEY([ID])
+REFERENCES [dbo].[AspNetUsers] ([ID])
+GO
+
+ALTER TABLE [dbo].[Warehouse]  WITH CHECK ADD FOREIGN KEY([DepartmentID])
+REFERENCES [dbo].[Department] ([DepartmentID])
+GO
+
+-- Product_Stock
+
+CREATE TABLE [dbo].[Product_Stock](
+	[Product_StockID] [int] IDENTITY(1,1) NOT NULL,
+	[ProductID] [int] NULL,
+	[WarehouseID] [int] NULL,
+	[Ammount] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Product_StockID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Product_Stock]  WITH CHECK ADD FOREIGN KEY([ProductID])
+REFERENCES [dbo].[Product] ([ProductID])
+GO
+
+ALTER TABLE [dbo].[Product_Stock]  WITH CHECK ADD FOREIGN KEY([WarehouseID])
+REFERENCES [dbo].[Warehouse] ([WarehouseID])
+GO
+
+-- Addrese
+
+CREATE TABLE [dbo].[Addrese](
+	[AddreseID] [int] IDENTITY(1,1) NOT NULL,
+	[ID] [int] NULL,
+	[PostalCode] [int] NULL,
+	[Addrese_Name] [nvarchar](255) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[AddreseID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Addrese]  WITH CHECK ADD FOREIGN KEY([ID])
+REFERENCES [dbo].[AspNetUsers] ([ID])
+GO
+
+ALTER TABLE [dbo].[Addrese]  WITH CHECK ADD FOREIGN KEY([PostalCode])
+REFERENCES [dbo].[PostalCodes] ([PostalCode])
+GO
