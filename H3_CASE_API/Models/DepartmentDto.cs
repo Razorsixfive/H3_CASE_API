@@ -5,10 +5,10 @@ namespace H3_CASE_API.Dto
     public class DepartmentDto
     {
         public int DepartmentID { get; set; }
-        public string Name { get; set; }
-        public string Addrese { get; set; }
-        public string Email { get; set; }
-        public string City { get; set; }
+        public string? Name { get; set; }
+        public string? Addrese { get; set; }
+        public string? Email { get; set; }
+        public string? City { get; set; }
         public int PostalCode { get; set; }
 
         public List<Employee> Employees { get; set; }
