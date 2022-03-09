@@ -23,5 +23,6 @@ namespace H3_CASE_API.DBContext
         public DbSet<Product> Product { get; set; }
         public DbSet<Product_Stock> Product_Stock { get; set; }
         public DbSet<Warehouse> Warehouse { get; set; }
+        public DbSet<Product_Status> Product_Status { get; set; }
     }
 }

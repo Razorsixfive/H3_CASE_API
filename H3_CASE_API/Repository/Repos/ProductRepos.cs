@@ -1,4 +1,6 @@
 ﻿using H3_CASE_API.Models;
+using H3_CASE_API.Models.Dto;
+using H3_CASE_API.Models.Views;
 
 namespace H3_CASE_API.Repository.Repos
 {
@@ -109,6 +111,14 @@ namespace H3_CASE_API.Repository.Repos
                 .Include(x => x.Category)
                 .Where(x => x.ManufactorID == id);
             return data;
+        }
+        public ProductsView FilterIntoView(IEnumerable<ProductDto> Products)
+        {
+            ProductsView _ProductsView = new ProductsView();
+                _ProductsView.Products = Products;
+                _ProductsView.Categories = _context.Category;
+                _ProductsView.Manufactors = _context.Manufactor;
+            return _ProductsView;
         }
 
         public bool ProductExists(int Id)

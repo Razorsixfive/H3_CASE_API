@@ -28,6 +28,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 builder.Services.AddScoped<ICustomerRepos, CustomerRepos>();
 builder.Services.AddScoped<IProductRepos, ProductRepos>();
 builder.Services.AddScoped<IWarehouseRepos, WarehouseRepos>();
+builder.Services.AddScoped<IOrdersRepos, OrdersRepos>();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

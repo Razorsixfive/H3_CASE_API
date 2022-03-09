@@ -1,5 +1,6 @@
 ﻿using System;
 using H3_CASE_API.Models;
+using H3_CASE_API.Models.Dto;
 using H3_CASE_API.Repository;
 using System.Collections.Generic;
 using System.Linq;

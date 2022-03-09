@@ -58,5 +58,11 @@ namespace H3_CASE_API.Models
 
             public IEnumerable<Post_Addrese>? Addreses { get; set; }
         }
+
+        public class Post_Order
+        {
+            public string? Addrese_Name { get; set; }
+            public int PostalCode { get; set; }
+        }
     }
 }

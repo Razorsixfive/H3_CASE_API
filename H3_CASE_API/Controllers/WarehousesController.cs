@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using H3_CASE_API.Repository;
-using H3_CASE_API.DBContext;
 using H3_CASE_API.Models;
+using H3_CASE_API.Models.Dto;
+using H3_CASE_API.Models.Views;
 
 namespace H3_CASE_API.Controllers
 {

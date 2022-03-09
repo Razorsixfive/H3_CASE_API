@@ -15,6 +15,9 @@ namespace H3_CASE_API.Models
         public int ManufactorID { get; set; }
         [ForeignKey("ManufactorID")]
         public Manufactor? Manufactor { get; set; }
+        public int Product_StatusID { get; set; }
+        [ForeignKey("Product_StatusID")]
+        public Product_Status? Product_Status { get; set; }
 
         public string? Product_Description { get; set; }
         public string? Product_Name { get; set; }

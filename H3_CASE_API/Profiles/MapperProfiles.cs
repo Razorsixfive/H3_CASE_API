@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using H3_CASE_API.Models;
+using H3_CASE_API.Models.Dto;
+using H3_CASE_API.Models.Views;
 
 namespace H3_CASE_API.Profiles
 {
@@ -42,6 +44,15 @@ namespace H3_CASE_API.Profiles
             CreateMap<Product, ProductDto>();
             CreateMap<Category, ProductDto>(MemberList.None);
             CreateMap<Manufactor, ProductDto>(MemberList.None);
+
+
+
+            CreateMap<Orders, OrdersDto>()
+                .ForMember(dest => dest.OrderlinesCount, opt => opt.MapFrom(src => src.OrderLines.Count()));
+
+            CreateMap<OrderLine, OrderLineDto>(MemberList.None);
+            CreateMap<OrderLineDto, OrdersDto>(MemberList.None);
+
         }
     }
 }

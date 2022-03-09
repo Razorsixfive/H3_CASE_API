@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using H3_CASE_API.DBContext;
 using H3_CASE_API.Models;
+using H3_CASE_API.Models.Dto;
+using H3_CASE_API.Models.Views;
 using AutoMapper;
 
 namespace H3_CASE_API.Controllers
@@ -21,10 +22,8 @@ namespace H3_CASE_API.Controllers
 
         public CustomersController(ICustomerRepos CustomerReposContext,IMapper mapper)
         {
-            _CustomerRepos = CustomerReposContext ??
-                throw new ArgumentNullException(nameof(CustomerReposContext));
-            _mapper = mapper ??
-                throw new ArgumentNullException(nameof(mapper));
+            _CustomerRepos = CustomerReposContext ?? throw new ArgumentNullException(nameof(CustomerReposContext));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
         // GET: api/Customers
@@ -60,7 +59,6 @@ namespace H3_CASE_API.Controllers
                 return Ok();
             }
             return BadRequest();
-
         }
 
         [HttpPut("{id}")]
@@ -83,7 +81,7 @@ namespace H3_CASE_API.Controllers
         [HttpPost("Addrese/{CustomerID}")]
         public async Task<IActionResult> AddAddrese(int CustomerID, InputDataModels.Post_Addrese _input)
         {
-            var data = _CustomerRepos.AddCustomer_Addrese(CustomerID, _input);
+            var data = await _CustomerRepos.AddCustomer_Addrese(CustomerID, _input);
             return Ok(data);
         }
 
@@ -91,7 +89,7 @@ namespace H3_CASE_API.Controllers
         [HttpDelete("Addrese/{AddreseID}")]
         public async Task<IActionResult> DeleteAddrese(int AddreseID)
         {
-            var data = _CustomerRepos.DeleteCustomer_Addrese(AddreseID);
+            var data = await _CustomerRepos.DeleteCustomer_Addrese(AddreseID);
             return Ok(data);
         }
 
@@ -99,7 +97,7 @@ namespace H3_CASE_API.Controllers
         [HttpPut("Addrese/{AddreseID}")]
         public async Task<IActionResult> UpdateAddrese(int AddreseID, InputDataModels.Post_Addrese _input)
         {
-            var data = _CustomerRepos.UpdateCustomer_Addrese(AddreseID, _input);
+            var data = await _CustomerRepos.UpdateCustomer_Addrese(AddreseID, _input);
             return Ok(data);
         }
     }

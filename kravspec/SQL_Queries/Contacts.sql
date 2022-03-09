@@ -1,4 +1,4 @@
-INSERT INTO Contact_Type VALUES ('Employee'),('Customer'),('Department'),('Warehouse');
+INSERT INTO Contact_Type VALUES ('Customer'),('Employee'),('Department'),('Warehouse');
 
 INSERT INTO Contact_Informaition VALUES
   (1,'odio.etiam@icloud.org','Joy','Watson','35 97 04 34','+45 52190674'),
@@ -122,27 +122,28 @@ INSERT INTO Warehouse VALUES (1,46),(2,47),(3,48),(4,49),(5,50);
 insert into Delivery_Service values ('GLS'),('PostLort'),('Bring');
 insert into Manufactor values ('Dell'),('HP'),('Nintento'),('Sony'),('Samsung');
 insert into Category values ('Computers'),('Camereas'),('TV'),('Sound');
+INSERT INTO Product_Status VALUES ('Invalid'),('Valid');
 
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3, 4, 'Removal of Traction Apparatus on Back', 'amlodipine besylate', 349.89, 866.43);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3, 2, 'Dilation of Transverse Colon, Endo', 'Metronidazole', 421.91, 998.03);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (4, 5, 'Excision of R Int Carotid, Perc Approach, Diagn', 'Triclosan', 229.5, 996.58);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (4, 4, 'Therapeutic Exercise Treatment of Circ Body using Oth Equip', 'Petrolatum', 188.9, 871.31);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (4, 2, 'Excision of Stomach, Via Natural or Artificial Opening, Vert', 'Avobenzone, Octisalate, and Octocrylene', 475.58, 801.35);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (1, 5, 'Revision of Neuro Lead in Spinal Canal, Open Approach', 'Trazodone Hydrochloride', 380.36, 638.6);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (4, 5, 'Dilation of L Verteb Art with 4 Drug-elut, Open Approach', 'Privet', 350.96, 888.58);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (1, 2, 'Dilation of Right Innominate Vein, Percutaneous Approach', 'Simvastatin', 431.54, 813.83);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3, 2, 'HDR Brachytherapy of Pelvic Region using Iridium 192', 'OCTINOXATE, TITANIUM DIOXIDE', 204.63, 934.42);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3, 4, 'Occlusion of Right Ureter, Open Approach', 'octinoxate, oxybenzone, petrolatum', 469.94, 780.52);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (4, 2, 'Reposition Right Toe Phalangeal Joint, Open Approach', 'zoledronic acid', 398.81, 594.05);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (1, 1, 'Repair Endocrine System in POC, Open Approach', 'bacitracin zinc, neomycin sulfate, polymyxin B sulfate', 450.17, 771.46);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (2, 2, 'Release Stomach, Endo', 'bupropion hydrochloride', 407.18, 910.13);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (2, 1, 'Alteration of Right Lower Eyelid, External Approach', 'Famotidine', 316.8, 811.63);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3, 4, 'Resection of R Inf Parathyroid, Perc Endo Approach', 'Dextromethorphan Hydrobromide, GUAIFENESIN', 358.18, 762.49);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3, 5, 'Magnetic Resonance Imaging (MRI) of Right Femur', 'Naproxen Sodium', 123.99, 892.28);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3, 4, 'Supplement Pudendal Nerve with Autol Sub, Perc Endo Approach', 'MERCURY', 262.78, 775.56);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (4, 5, 'Inspection of Pancreatic Duct, Perc Endo Approach', 'Atenolol and Chlorthalidone', 270.56, 953.79);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (2, 2, 'Revision of Autol Sub in L Toe Phalanx Jt, Perc Approach', 'standardized senna concentrate and docusate sodium', 119.72, 778.34);
-insert into Product (CategoryID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3, 5, 'Supplement R Com Iliac Vein with Synth Sub, Open Approach', 'Menthol and Zinc Oxide', 359.52, 806.77);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3,2, 4, 'LG OLED TV er en sate banebrydende teknologier hjælper m, hvad du elsker ved tv – forbedret på enhver måde.', 'LG 48" OLED 4K TV OLED48C1', 349.89, 866.43);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3,2, 2, 'Neo QLED er Samsung-teknologien, der men fængslende gaming-oplevelse ud over det sædvanlige.', 'Samsung 65" 4K Neo QLED TV QE65QN90', 421.91, 998.03);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3,2, 5, 'Med firesidig Philips Ambilight kommer du tætteer obng for at undre dig over, hvordan du kunne se TV uden før.', 'Philips 58" 4K Smart TV 58PUS9006/12', 229.5, 996.58);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3,2, 4, 'Bliv opslugt. Firesidig Ambilight. Mepleve Ambilight én gang fo TV uden før.', 'Philips 55" 4K OLED TV 55OLED806/12', 188.9, 871.31);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3,2, 2, 'XR Contrast Vores Cognitive Processor XR krydsanalyserer dage øje fokuserer på mere realistisk farve og ...', 'Sony 55" OLED 4K Google TV XR55A80J', 475.58, 801.35);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3,2, 5, 'Philips 4K UHD TV er kompatibelt ml skyggerne vog farverne vil være mere naturtro.', 'Philips 43" 4K UHD TV 43PUS7556/12', 380.36, 638.6);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (3,2, 5, 'Med Philips Ambilight kommer du tættere pår på handling er fængslende. Du behøkunne se TV uden før.', 'Philips 65" 4K UHD Ambilight TV 65PUS7906/12', 350.96, 888.58);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (1,2, 2, 'Oplev en stationær computer medAAA-spil, uanset hvor krævende de er.', 'HP Pavilion Gaming TG01-2027no', 431.54, 813.83);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (1,2, 2, 'Infinite-serien er bygenterså stiinite-seriens gaming-desktop er klar til at erobre den vildeste slagmark.', 'MSI MAG Infinite', 204.63, 934.42);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (1,2, 4, 'Efterlad et spor af ødelæggels og din rig forbliver kølig og hviskende stille.', 'Lenovo Legion T7i', 469.94, 780.52);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (1,2, 2, 'Oplev en stationær compue alle AAA-spil, uanset hvor krævende de er.', 'HP Pavilion Gaming TG01-2021no', 398.81, 594.05);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (1,2, 1, 'Born out of a sketch aimed to proes a unique design without compromising on function.', 'MSI MAG Infinite S3', 450.17, 771.46);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (1,2, 2, 'Gaming-PC’en Nitro 50 i sort  skridessoren og NVIDIA® GeForce RTX™ 3060Ti-grafikkortet.', 'Acer Nitro N50-610', 407.18, 910.13);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (2,2, 1, 'DJI Pocket 2, der er i lge skarpe fotos og glatte videoer giver Pocket 2 dig frihed til at skabe magi lige ved hånden.', 'DJI Pocket 2 Videokamera', 316.8, 811.63);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (2,2, 4, 'HERO9 Black har en bestial med berøringszoom, 30% længere batterilevetid og HyperSmooth 3.0, og du får mere af alt, hvad du elsker.', 'GoPro HERO9 Black Actiokamera', 358.18, 762.49);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (2,2, 5, 'DJI Action 2 er ikke bare ultd for ubemed DJI Action 2.', 'DJI Action 2 Power Combo', 123.99, 892.28);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (2,2, 4, 'iver dig mulighed for ubesværet at skifte tilbehør ud, mens du fanger livet på faon 2.', 'DJI Pocket 2 Creator Combo', 262.78, 775.56);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (2,2, 5, 'DJI Action 2 er ikkeve magnetisparkour til parkvandringer, bryd formen med DJI Action 2.', 'DJI Action 2 Dual-Screen Combo', 270.56, 953.79);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (4,2, 2, 'The Referenther brand can bring this theater-quality surround sound experience into your home like Klipsch.', 'Klipsch RP-502S Premiere II, par', 119.72, 778.34);
+insert into Product (CategoryID,Product_StatusID, ManufactorID, Product_Description, Product_Name, In_Price, Out_Price) values (4,2, 5, 'Inkludert Klipsch R-100SW subwoofer', 'Klipsch R-41PM aktiv høyttaler, par', 359.52, 806.77);
 
 insert into Product_Stock (ProductID, WarehouseID, Ammount) values (6, 5, 66);
 insert into Product_Stock (ProductID, WarehouseID, Ammount) values (2, 4, 30);
