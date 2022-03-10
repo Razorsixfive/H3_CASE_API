@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "vPUE03NTLoZvXU+oyB8CmM275nEQ0jljQ6Vm2+NGV41Z6gjQqwJidipibXNRXoMCvNFsfZkY3rH4h7V5rWuunA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HFGF\\.nuget\\packages\\fluentvalidation\\10.0.0\\fluentvalidation.10.0.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\netdevpack\\1.1.1\\netdevpack.1.1.1.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

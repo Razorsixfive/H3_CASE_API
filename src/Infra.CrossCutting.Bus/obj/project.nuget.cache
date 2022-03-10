@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "twZ03ZZkX6035VZVKb2IBRQwTvp+uYLEd2p8aFwV7N+lA7Rqd1El7ogWtlTTuS+CWTaTDcyPmyz2nCi3AjSnRA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HFGF\\.nuget\\packages\\fluentvalidation\\10.0.0\\fluentvalidation.10.0.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\netdevpack\\1.1.1\\netdevpack.1.1.1.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

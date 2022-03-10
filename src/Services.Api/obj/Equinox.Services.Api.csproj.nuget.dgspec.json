@@ -1,0 +1,606 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Services.Api\\Equinox.Services.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Application\\Equinox.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Application\\Equinox.Application.csproj",
+        "projectName": "Equinox.Application",
+        "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Application\\Equinox.Application.csproj",
+        "packagesPath": "C:\\Users\\Leela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Leela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj"
+              },
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.Data\\Equinox.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.Data\\Equinox.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain.Core\\Equinox.Domain.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain.Core\\Equinox.Domain.Core.csproj",
+        "projectName": "Equinox.Domain.Core",
+        "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain.Core\\Equinox.Domain.Core.csproj",
+        "packagesPath": "C:\\Users\\Leela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Leela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "NetDevPack": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj",
+        "projectName": "Equinox.Domain",
+        "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj",
+        "packagesPath": "C:\\Users\\Leela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Leela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain.Core\\Equinox.Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain.Core\\Equinox.Domain.Core.csproj"
+              },
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Bus\\Equinox.Infra.CrossCutting.Bus.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Bus\\Equinox.Infra.CrossCutting.Bus.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "System.ComponentModel": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Security.Claims": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Bus\\Equinox.Infra.CrossCutting.Bus.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Bus\\Equinox.Infra.CrossCutting.Bus.csproj",
+        "projectName": "Equinox.Infra.CrossCutting.Bus",
+        "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Bus\\Equinox.Infra.CrossCutting.Bus.csproj",
+        "packagesPath": "C:\\Users\\Leela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Bus\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Leela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain.Core\\Equinox.Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain.Core\\Equinox.Domain.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "mediatr": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Identity\\Equinox.Infra.CrossCutting.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Identity\\Equinox.Infra.CrossCutting.Identity.csproj",
+        "projectName": "Equinox.Infra.CrossCutting.Identity",
+        "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Identity\\Equinox.Infra.CrossCutting.Identity.csproj",
+        "packagesPath": "C:\\Users\\Leela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Leela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "NetDevPack.Identity": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.IoC\\Equinox.Infra.CrossCutting.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.IoC\\Equinox.Infra.CrossCutting.IoC.csproj",
+        "projectName": "Equinox.Infra.CrossCutting.IoC",
+        "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.IoC\\Equinox.Infra.CrossCutting.IoC.csproj",
+        "packagesPath": "C:\\Users\\Leela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Leela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Application\\Equinox.Application.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Application\\Equinox.Application.csproj"
+              },
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj"
+              },
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Identity\\Equinox.Infra.CrossCutting.Identity.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Identity\\Equinox.Infra.CrossCutting.Identity.csproj"
+              },
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.Data\\Equinox.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.Data\\Equinox.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.Data\\Equinox.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.Data\\Equinox.Infra.Data.csproj",
+        "projectName": "Equinox.Infra.Data",
+        "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.Data\\Equinox.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Leela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Leela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Domain\\Equinox.Domain.csproj"
+              },
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Identity\\Equinox.Infra.CrossCutting.Identity.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Identity\\Equinox.Infra.CrossCutting.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "NetDevPack.Identity": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Services.Api\\Equinox.Services.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Services.Api\\Equinox.Services.Api.csproj",
+        "projectName": "Equinox.Services.Api",
+        "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Services.Api\\Equinox.Services.Api.csproj",
+        "packagesPath": "C:\\Users\\Leela\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Services.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Leela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Application\\Equinox.Application.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Application\\Equinox.Application.csproj"
+              },
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Bus\\Equinox.Infra.CrossCutting.Bus.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Bus\\Equinox.Infra.CrossCutting.Bus.csproj"
+              },
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Identity\\Equinox.Infra.CrossCutting.Identity.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.Identity\\Equinox.Infra.CrossCutting.Identity.csproj"
+              },
+              "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.IoC\\Equinox.Infra.CrossCutting.IoC.csproj": {
+                "projectPath": "C:\\Users\\Leela\\Desktop\\H3 opgaver\\backup\\H3_CASE_API_Ny\\src\\Equinox.Infra.CrossCutting.IoC\\Equinox.Infra.CrossCutting.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.14, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
