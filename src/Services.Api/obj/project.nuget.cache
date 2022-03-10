@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XRSGnQVBVIB9SnmzbB0SlpAQ0OV5PMEpCdjhL5bAfQlBeIejZaiGPXD2J2syagQDChKhONY6WVX8/jMhkPBwmg==",
+  "dgSpecHash": "B5yYxTx8769ZoK2aYgrQRvDuAt9Jyl8Zh5YPPWAsDIzQDQjYzUkVcesjNizvQILi641OmS13iE4JfwwLYmtRmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj",
+  "projectFilePath": "C:\\Users\\HFGF\\Documents\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HFGF\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
@@ -121,11 +121,7 @@
     "C:\\Users\\HFGF\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\HFGF\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

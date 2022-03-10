@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cUBs0lRjEr5BN+h/7DrTHcjp4t4dJfwbLuuZ8AxgqlidbxDcMqUrxeTvmRmIytRZIG13qFFhIxyJd7je8GzrvA==",
+  "dgSpecHash": "IvC+ACYMJiyMgLGp9Fs/9DX30igaG64Hkteyx0GQGt3h/9QaUGI3xOcgDkiJcFrlGW7Xn5DuG8Wsy6tUt+rQkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\H3_CASE_API\\H3_CASE_API.csproj",
+  "projectFilePath": "C:\\Users\\HFGF\\Documents\\H3_CASE_API\\src\\H3_CASE_API\\H3_CASE_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HFGF\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

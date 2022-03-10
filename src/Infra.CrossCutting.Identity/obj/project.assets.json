@@ -6041,11 +6041,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
+      "projectUniqueName": "C:\\Users\\HFGF\\Documents\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
       "projectName": "Infra.CrossCutting.Identity",
-      "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
+      "projectPath": "C:\\Users\\HFGF\\Documents\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
       "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\obj\\",
+      "outputPath": "C:\\Users\\HFGF\\Documents\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6066,8 +6066,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
+            "C:\\Users\\HFGF\\Documents\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\HFGF\\Documents\\H3_CASE_API\\src\\Domain\\Domain.csproj"
             }
           }
         }
@@ -6105,26 +6105,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7EO7n52sxj2JXQFQL4ywgphyHk3qAvBDlZ/sZ9oSSiCpLo8eL9nW4Nsgs5ydpDV0Yrv7doY14h3mTpM6cKFr9Q==",
+  "dgSpecHash": "wZczEqtG3Im/JUymiV1jRWo88v8qVE6S4Pbt7bbjFGe54hr8uOHNfNrzgp0cMNXKZEj+zLCEZoQ7TKnKaOreVA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj",
+  "projectFilePath": "C:\\Users\\HFGF\\Documents\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HFGF\\.nuget\\packages\\fluentvalidation\\10.0.0\\fluentvalidation.10.0.0.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
@@ -108,10 +108,7 @@
     "C:\\Users\\HFGF\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\HFGF\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
