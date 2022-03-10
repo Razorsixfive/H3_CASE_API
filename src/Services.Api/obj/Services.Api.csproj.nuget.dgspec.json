@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj": {}
+    "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Application\\Application.csproj": {
+    "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Application\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj": {
+    "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj",
         "projectName": "Domain.Core",
-        "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj",
+        "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -167,14 +167,14 @@
         }
       }
     },
-    "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
+    "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -195,11 +195,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj"
               },
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj"
               }
             }
           }
@@ -264,14 +264,14 @@
         }
       }
     },
-    "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj": {
+    "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj",
         "projectName": "Infra.CrossCutting.Bus",
-        "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj",
+        "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -292,8 +292,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj"
               }
             }
           }
@@ -346,14 +346,14 @@
         }
       }
     },
-    "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj": {
+    "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
         "projectName": "Infra.CrossCutting.Identity",
-        "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
+        "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -374,8 +374,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -436,14 +436,14 @@
         }
       }
     },
-    "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj": {
+    "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj",
         "projectName": "Infra.CrossCutting.IoC",
-        "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj",
+        "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -464,17 +464,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Application\\Application.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Application\\Application.csproj"
               },
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj"
               },
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj"
               }
             }
           }
@@ -521,14 +521,14 @@
         }
       }
     },
-    "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj": {
+    "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj",
         "projectName": "Infra.Data",
-        "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj",
+        "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.Data\\Infra.Data.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.Data\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -549,11 +549,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain.Core\\Domain.Core.csproj"
               },
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -618,14 +618,14 @@
         }
       }
     },
-    "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj": {
+    "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj",
         "projectName": "Services.Api",
-        "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj",
+        "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Services.Api\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Services.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -646,17 +646,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Application\\Application.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Application\\Application.csproj"
               },
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Bus\\Infra.CrossCutting.Bus.csproj"
               },
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj"
               },
-              "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj": {
-                "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj"
+              "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj": {
+                "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj"
               }
             }
           }

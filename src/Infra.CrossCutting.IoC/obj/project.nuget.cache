@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Nzh4BjC5cGj8nUXZFDUSONabdSq5im+NH0EESBlNUGOW4vdhrcszfswOqr0elUWXOMly/B9ksc0h7sGZRripEg==",
+  "dgSpecHash": "WGMaBm11Jls1z4zz+UrEqrGRiIZb2d8fSGpm6rMFL7RPzNy0Z+ihM0zs/ZewRwDmAkV0nsNUzqaAjzICGc9X6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj",
+  "projectFilePath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.IoC\\Infra.CrossCutting.IoC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HFGF\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\fluentvalidation\\10.0.0\\fluentvalidation.10.0.0.nupkg.sha512",

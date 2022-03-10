@@ -6041,11 +6041,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
+      "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
       "projectName": "Infra.CrossCutting.Identity",
-      "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
+      "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\Infra.CrossCutting.Identity.csproj",
       "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\obj\\",
+      "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Infra.CrossCutting.Identity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6066,8 +6066,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
+            "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Domain\\Domain.csproj"
             }
           }
         }

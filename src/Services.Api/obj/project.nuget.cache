@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tirxj5kbE4vyZXD6cNFFgSk56nurpaMSSY4gMffOpfmYoC6ch+YUmefrhUp1L2bW7f685+Xh+0Ckf0xU2emA3Q==",
+  "dgSpecHash": "XRSGnQVBVIB9SnmzbB0SlpAQ0OV5PMEpCdjhL5bAfQlBeIejZaiGPXD2J2syagQDChKhONY6WVX8/jMhkPBwmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HFGF\\source\\repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj",
+  "projectFilePath": "C:\\Users\\HFGF\\Source\\Repos\\H3_CASE_API\\src\\Services.Api\\Services.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HFGF\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
